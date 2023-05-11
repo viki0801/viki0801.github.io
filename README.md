@@ -29,13 +29,13 @@ The installation steps in this document will take the Windows 10 operating syste
 
 **Step 3: Configure PATH Environment Variables**
 
-   1. Right-click **This PC** in Windows and select **Properties > Advanced System Settings**.
-   2. On the "Advanced" tab, click **Environment Variables**.
+1. Right-click **This PC** in Windows and select **Properties > Advanced System Settings**.
+2. On the "Advanced" tab, click **Environment Variables**.
 
-![environment_variables](assets/environment_variables-1683798756206-17.jpg)
+   ![environment_variables](assets/environment_variables-1683798756206-17.jpg)
 
-  3. In the pop-up window, select the Path item in the System variables box and click **Edit**.
-  4. The "Edit Environment Variables" window will pops up, and modify the Path entry to the bin directory address as shown in the following figure. Click **OK** to complete the modification.
+3. In the pop-up window, select the Path item in the System variables box and click **Edit**.
+4. The "Edit Environment Variables" window will pops up, and modify the Path entry to the bin directory address as shown in the following figure. Click **OK** to complete the modification.
    
    ![edit](assets/edit.jpg)
 
@@ -49,7 +49,7 @@ Run **cmd** and execute the **hugo version** command  to verify whether Hugo is 
 
 ### Signning up for a Github Account
 
-New users have to create an account before use it.
+New users have to create a Github account before use it.
 
 1. Open [Github](#https://www.github.com) website.
 2. Click **Sign up** in the upper-right corner of the page to register an account.
@@ -62,40 +62,39 @@ Git is based on a variety of transport protocols, the most commonly used of whic
 
 **Step 1: Generate a key**
 
-   1. Run **cmd** and execute the **ssh-keygen -t rsa -C 'email'** command .
+1. Run **cmd** and execute the **ssh-keygen -t rsa -C 'email'** command .
 
    > Note: email is the email address bound when registering GitHub.
 
-![createssh1](assets/createssh1.jpg)
+     ![createssh1](assets/createssh1.jpg)
 
-   2. Press the **Enter** key three times in a row until you are prompted that the key has been written to the corresponding path.
+2. Press the **Enter** key three times in a row until you are prompted that the key has been written to the corresponding path.
 
-![createssh](assets/createssh.jpg)
+   ![createssh](assets/createssh.jpg)
 
-   3. Locate the “id_rsa.pub file” in the ssh folder, view and copy the key.
+3. Locate the “id_rsa.pub file” in the ssh folder, view and copy the key.
 
-![sshcontent](assets/sshcontent.jpg)
+   ![sshcontent](assets/sshcontent.jpg)
 
 **Step 2: Add a key**
 
-   1. Go to the GitHub homepage, click user account picture in the upper right corner, and select **Settings** from the drop-down options.
-   2. Select **SSH and GPG keys** in the left navigation bar.
+1. Go to the GitHub homepage, click user account picture in the upper right corner, and select **Settings** from the drop-down options.
+2. Select **SSH and GPG keys** in the left navigation bar.
 
-![choose_ssh](assets/choose_ssh.jpg)
+   ![choose_ssh](assets/choose_ssh.jpg)
 
-   3. Copy the key from the local "id_rsa.pub file" in the Github Key text box and click **Add SSH key**.
+3. Copy the key from the local "id_rsa.pub file" in the Github Key text box and click **Add SSH key**.
 
-![ssh](assets/ssh.jpg)
+   ![ssh](assets/ssh.jpg)
 
-   4. After adding the key, the password input box pops up on the page. Enter the Github password to complete the password confirmation.
-
+4. After adding the key, the password input box pops up on the page. Enter the Github password to complete the password confirmation.
 
 
 ## Creating a Website
 
 ### Creating a New Site
 
-Run **cmd** in the hugo directory, execute the **hugo new site <*sitename*>** command  to create a new site, and a folder named after the site will be generated under the hugo directory folder.
+Run **cmd** in any directory, execute the **hugo new site <*sitename*>** command  to create a new site, while a folder named after the site will be generated under the directory folder.
 
 ![new_site](assets/new_site.jpg)
 
@@ -119,20 +118,20 @@ Hugo official website provides a large number of open source themes, and each th
 1. Execute the **hugo server --theme=<*themename*> --buildDrafts** command to run the website.
 2. Type localhost:1313 in your browser to view the sample site, and the new document and theme style will also be displayed.
 
-![instance](assets/instance.jpg)
+   ![instance](assets/instance.jpg)
 
 ## Deploying the Website
 
 ### Creating a Repository
 
 1. In the Github profile, click **Create Repository**.
-2. A "Create a new repository" interface pops up, you need to configure it.
-   - **Repository name**: the repository name must be the same as the registered username, for example, if the username is viki0801, the repository name must be viki0801.github.io.
+2. A "Create a new repository" interface pops up, you can do the following settings.
+   - **Repository name**: the repository name must be the same as the registered username. For example, if the username is xxx, the repository name must be xxx.github.io.
    - **Description(optional)**: describe your repository.
    - Access Permission: select **Public** so that other users can access your website.
-   - Initialize this repository with: check **add a README file** to automatically create the main branch.
+   - Initialize this repository with: check **add a README file** to automatically create a main branch.
 
-![newrepository](assets/newrepository.jpg)
+   ![newrepository](assets/newrepository.jpg)
 
 3. Click **Create repository**.
 
@@ -146,4 +145,4 @@ After running the hugo command, a public folder is automatically generated in th
 4. Execute the **git commit -m "content"** command to submit the information.
 5. Run the  **git push origin master** command to push the files to the repository.
 
-![deployment](assets/deployment.jpg)
+   ![deployment](assets/deployment.jpg)
