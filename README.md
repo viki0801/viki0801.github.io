@@ -31,7 +31,6 @@ The installation steps in this document will take the Windows 10 operating syste
 
 1. Right-click **This PC** in Windows and select **Properties > Advanced System Settings**.
 2. On the "Advanced" tab, click **Environment Variables**.
-
    ![environment_variables](assets/environment_variables-1683798756206-17.jpg)
 
 3. In the pop-up window, select the Path item in the System variables box and click **Edit**.
