@@ -6,7 +6,7 @@ This document will introduce how to use Hugo to build a personal website and dep
 
 ## Installation
 
-The installation steps in this document will take the Windows 10 operating system as an example, please install it according to the actual environment of your computer.
+The installation procedure varies according to the operating systems. This document will take the Windows operating system as an example.
 
 ### Installing Git
 
@@ -17,16 +17,16 @@ The installation steps in this document will take the Windows 10 operating syste
 ### Installing Hugo 
 
 **Step 1: Download the Hugo installation package**
-   1. Open [Hugo](#https://gohugo.io/) website.
-   2. Select the installation package suitable for the local system to download.
+
+1. Open [Hugo](#https://gohugo.io/) website.
+2. Select the installation package suitable for the local system to download.
 
 **Step 2: Create a bin directory**
 
-   1. Create a **Hugo > bin** directory folder on the local disk.
+1. Create a **Hugo > bin** directory folder on the local disk.
+2. Store the Hugo decompressing files in the bin folder.
 
-   2. Store the Hugo decompressing files in the bin folder.
-
-![decompression](assets/decompression.jpg)
+   ![decompression](assets/decompression.jpg)
 
 **Step 3: Configure PATH Environment Variables**
 
