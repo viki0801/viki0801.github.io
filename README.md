@@ -2,11 +2,11 @@
 
 ## Overview
 
-This document will introduce how to use Hugo to build a personal website and deploy it to a Github page so that other users can access the website.
+This document will introduce how to use Hugo to build a personal website and deploy it to the Github page so that other people can access your website.
 
 ## Installation
 
-The installation steps in this document will take the Windows 10 operating system as an example, please install it according to the actual environment of your computer.
+The installation steps in this document will take the Windows 10 operating system as an example, please install it according to the practical environment of your computer.
 
 ### Installing Git
 
@@ -23,7 +23,6 @@ The installation steps in this document will take the Windows 10 operating syste
 **Step 2: Create a bin directory**
 
    1. Create a **Hugo > bin** directory folder on the local disk.
-
    2. Store the Hugo decompressing files in the bin folder.
 
 ![decompression](assets/decompression.jpg)
@@ -35,9 +34,8 @@ The installation steps in this document will take the Windows 10 operating syste
 
 ![environment_variables](assets/environment_variables-1683798756206-17.jpg)
 
-3. In the pop-up window, select the Path item in the System variables box and click **Edit**.
-
-4. The "Edit Environment Variables" window will pops up, and modify the Path entry to the bin directory address as shown in the following figure. Click **OK** to complete the modification.
+  3. In the pop-up window, select the Path item in the System variables box and click **Edit**.
+  4. The "Edit Environment Variables" window will pops up, and modify the Path entry to the bin directory address as shown in the following figure. Click **OK** to complete the modification.
    
    ![edit](assets/edit.jpg)
 
@@ -64,32 +62,32 @@ Git is based on a variety of transport protocols, the most commonly used of whic
 
 **Step 1: Generate a key**
 
-1. Run **cmd** and execute the **ssh-keygen -t rsa -C 'email'** command .
+   1. Run **cmd** and execute the **ssh-keygen -t rsa -C 'email'** command .
 
-> Note: email is the email address bound when registering GitHub.
+   > Note: email is the email address bound when registering GitHub.
 
 ![createssh1](assets/createssh1.jpg)
 
-2. Press the **Enter** key three times in a row until you are prompted that the key has been written to the corresponding path.
+   2. Press the **Enter** key three times in a row until you are prompted that the key has been written to the corresponding path.
 
 ![createssh](assets/createssh.jpg)
 
-3. Locate the “id_rsa.pub file” in the ssh folder, view and copy the key.
+   3. Locate the “id_rsa.pub file” in the ssh folder, view and copy the key.
 
 ![sshcontent](assets/sshcontent.jpg)
 
 **Step 2: Add a key**
 
-1. Go to the GitHub homepage, click user account picture in the upper right corner, and select **Settings** from the drop-down options.
-2. Select **SSH and GPG keys** in the left navigation bar.
+   1. Go to the GitHub homepage, click user account picture in the upper right corner, and select **Settings** from the drop-down options.
+   2. Select **SSH and GPG keys** in the left navigation bar.
 
 ![choose_ssh](assets/choose_ssh.jpg)
 
-3. Copy the key from the local "id_rsa.pub file" in the Github Key text box and click **Add SSH key**.
+   3. Copy the key from the local "id_rsa.pub file" in the Github Key text box and click **Add SSH key**.
 
 ![ssh](assets/ssh.jpg)
 
-4. After adding the key, the password input box pops up on the page. Enter the Github password to complete the password confirmation.
+   4. After adding the key, the password input box pops up on the page. Enter the Github password to complete the password confirmation.
 
 
 
@@ -112,7 +110,7 @@ Hugo official website provides a large number of open source themes, and each th
 1. Select a theme (for example, hugo_theme_adam_eve) and click **Download** on the theme interface.
 2. Enter the theme project repository interface and view the theme installation steps.
 
-![installtheme](assets/installtheme.jpg)
+   ![installtheme](assets/installtheme.jpg)
 
 3. According to the theme installation steps, run **cmd** in the theme directory and execute the **git clone <*theme_address*>** command. 
    
@@ -135,7 +133,6 @@ Hugo official website provides a large number of open source themes, and each th
    - Initialize this repository with: check **add a README file** to automatically create the main branch.
 
 ![newrepository](assets/newrepository.jpg)
-
 
 3. Click **Create repository**.
 
